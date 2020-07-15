@@ -12,7 +12,7 @@ document.querySelector('.btn-convert').addEventListener('click', function() {
 });
 
 $(document).ready(function() {
-    $('#textareaId').keydown(function (e) {
+    $('.txa-origin').keydown(function (e) {
         if (e.ctrlKey && e.keyCode == 13) {
             let trans = document.querySelector('.txa-origin').value;
             trans = trans.split('\n\n').join('^');
