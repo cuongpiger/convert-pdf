@@ -13,7 +13,7 @@ document.querySelector('.btn-convert').addEventListener('click', function() {
 
 $(document).ready(function() {
     $('.txa-origin').keydown(function (e) {
-        if (e.ctrlKey && e.keyCode == 13) {
+        if (e.ctrlKey && e.altKey) {
             let trans = document.querySelector('.txa-origin').value;
             trans = trans.split('\n\n').join('^');
             trans = trans.split('\n').join(' ');
